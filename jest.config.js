@@ -14,6 +14,7 @@ module.exports = {
   transform: {
     '.+\\.ts$': 'ts-jest'
   },
+  preset: '@shelf/jest-mongodb',
   coveragePathIgnorePatterns: [
     '/node_modules/',
     '/dist/'
