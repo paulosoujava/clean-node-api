@@ -6,7 +6,7 @@ import { Controller } from '../../../presentation/protocols'
 import { LogControllerDecorator } from '../../decorators/log-controller-decorator'
 import { LogMongoRepository } from '../../../infra/log/log-mongo-repository'
 import { BcrypterAdapter } from '../../../infra/criptography/bcrypt-adatper/bcrypt-adapter'
-import { makeSignUpValidations } from '../login/login'
+import { makeSignUpValidations } from './signup-validations-factory'
 
 export const makeSignUpController = (): Controller => {
   const salt = env.salt
