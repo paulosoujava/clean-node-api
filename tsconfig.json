@@ -1,8 +1,15 @@
 {
     "compilerOptions": {
-        "outDir": "./dist",
+        "outDir": "dist",
         "module": "commonjs",
         "target": "ES2019",
         "esModuleInterop": true
-    }
+    },
+    "include": [
+        "src"
+    ],
+    "exclude": [  // remover do build
+        "**/*.spec.ts",
+        "**/*.test.ts",
+    ]
 }

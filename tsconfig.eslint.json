@@ -1,0 +1,4 @@
+{
+    "extends": "./tsconfig.json",
+    "exclude": []  // para o lint nao ignorar ninguem
+}
